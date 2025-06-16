@@ -1,0 +1,572 @@
+@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f2f2f2;
+}
+.first-section {
+  width: 100%;
+  height: 80vh;
+  background-image: url(./assets/high-angle-women-office-planning-together8-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 8%;
+
+  .banner {
+    width: 100%;
+    height: 10%;
+    padding: 1rem 10%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+      a {
+        font-family: "Barlow", sans-serif;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        border-bottom: 2px rgba(255, 255, 255, 0.082) solid;
+      }
+      a:hover {
+        text-decoration: 2px underline;
+      }
+    }
+
+    button {
+      background-color: #0b37ba;
+      color: white;
+      border-radius: 2rem;
+      padding: 0.7rem 3rem;
+      border: 0;
+      font-weight: 700;
+      position: relative;
+      .dial {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 11%;
+        top: 30%;
+      }
+    }
+
+    i {
+      color: white;
+    }
+
+    @media screen and (max-width: 767px) {
+      i {
+        display: flex;
+      }
+      nav {
+        display: none;
+      }
+      button {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      i {
+        display: flex;
+      }
+      nav {
+        display: none;
+      }
+      button {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 993px) {
+      i {
+        display: none;
+      }
+    }
+  }
+
+  .box {
+    position: absolute;
+    bottom: -19%;
+    right: 23%;
+    width: 35%;
+    height: 60%;
+    background-color: #0b37ba;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.5rem, 2vw, 2.2rem);
+
+    h2 {
+      font-size: clamp(1rem, 4vw, 4.6rem);
+      font-weight: 800;
+      font-family: "Fustat", sans-serif;
+    }
+
+    p {
+      font-size: clamp(0.5rem, 1.5vw, 1.3rem);
+      font-family: "Open Sans", sans-serif;
+      font-weight: 500;
+    }
+
+    pre {
+      font-size: clamp(0.5rem, 1vw, 0.9rem);
+      font-family: "Open Sans", sans-serif;
+    }
+
+    a {
+      color: white;
+    }
+
+    button {
+      border: 1px white solid;
+      height: auto;
+      padding: clamp(0px, 3vw, 17px);
+      font-family: "Open Sans", sans-serif;
+      text-transform: uppercase;
+      width: 8rem;
+      border-radius: 12px;
+      background-color: #0b37ba;
+      color: white;
+      font-weight: 700;
+      text-align: center;
+    }
+    button:hover {
+      background-color: white;
+      color: #0b37ba;
+    }
+    @media screen and (max-width: 767px) {
+      width: 50%;
+      height: 40%;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      width: 60%;
+      height: 43%;
+    }
+  }
+}
+
+.second-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  .first-half {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+
+    h2 {
+      color: black;
+      font-size: clamp(1.5rem, 3vw, 3.4rem);
+      font-family: "Fustat", sans-serif;
+      font-weight: 800;
+    }
+    pre {
+      font-family: "Open Sans", sans-serif;
+      font-size: clamp(0.5rem, 1.5vw, 1rem);
+      font-style: italic;
+    }
+  }
+}
+.boxes {
+  width: 100%;
+  height: 70%;
+  padding: 1rem 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .box1 {
+    width: 32%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    .box-top {
+      width: 100%;
+      height: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h4 {
+        font-size: 24px;
+        font-weight: 500;
+        font-family: "Fustat", sans-serif;
+        color: #808080;
+      }
+      h3 {
+        font-size: 48px;
+        font-weight: 800;
+        font-family: "Oswald", sans-serif;
+        color: #0b37ba;
+      }
+      h6 {
+        font-size: 18px;
+        font-weight: 800;
+        font-family: "PT Sans", sans-serif;
+        color: #808080;
+      }
+    }
+
+    .box-bottom {
+      width: 100%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      p {
+        font-family: "PT Sans", sans-serif;
+        font-size: 16px;
+      }
+      button {
+        border: 1px #0b37ba solid;
+        padding: 8px 59px 11px 55px;
+        border-radius: 6px;
+        background-color: #0b37ba;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: "Open Sans", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 30px;
+      }
+      button:hover {
+        background-color: white;
+        color: #0b37ba;
+      }
+    }
+  }
+
+  .box2 {
+    width: 32%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    align-items: center;
+    border: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(128, 128, 128, 1);
+    border-radius: 15px;
+
+    .box-top {
+      width: 100%;
+      height: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h4 {
+        font-size: 24px;
+        font-weight: 500;
+        font-family: "Fustat", sans-serif;
+        color: #808080;
+      }
+      h3 {
+        font-size: 48px;
+        font-weight: 800;
+        font-family: "Oswald", sans-serif;
+        color: #0b37ba;
+      }
+      h6 {
+        font-size: 18px;
+        font-weight: 800;
+        font-family: "PT Sans", sans-serif;
+        color: #808080;
+      }
+    }
+    .box-bottom {
+      width: 100%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      p {
+        font-family: "PT Sans", sans-serif;
+        font-size: 16px;
+      }
+      button {
+        border: 1px #0b37ba solid;
+        padding: 8px 59px 11px 55px;
+        border-radius: 6px;
+        background-color: #0b37ba;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: "Open Sans", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 30px;
+      }
+      button:hover {
+        background-color: white;
+        color: #0b37ba;
+      }
+    }
+  }
+}
+
+.line {
+  border-top: 1px #d9d9d9 solid;
+  width: 95%;
+  height: 1.8px;
+}
+
+.third-section {
+  width: 100%;
+  height: 50vh;
+  background-color: #0b37ba;
+  display: flex;
+  flex-direction: column;
+
+  .top {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    h2 {
+      font-size: clamp(1.5rem, 4vw, 3.4rem);
+      font-weight: 800;
+      color: white;
+      font-family: "Fustat", sans-serif;
+    }
+  }
+  .bottom {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 3rem;
+
+    .boxs {
+      display: flex;
+      flex-wrap: wrap;
+      width: 25%;
+      height: 100%;
+      padding-right: 2rem;
+      flex-direction: column;
+
+      .icon {
+        background-color: white;
+        width: 47px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .small-icon {
+          width: 27px;
+          height: 27px;
+        }
+      }
+
+      h6 {
+        font-weight: 800;
+        font-size: 18px;
+        font-family: "Fustat", sans-serif;
+        color: white;
+        padding: 10px;
+      }
+      .top-half {
+        width: 100%;
+        height: 30%;
+        border-bottom: 1px white solid;
+        display: flex;
+        align-items: end;
+        padding-bottom: 5px;
+      }
+      .bottom-half {
+        width: 100%;
+        height: 70%;
+      }
+      h3 {
+        font-size: clamp(24px, 4vw, 48px);
+        font-weight: 700;
+        font-family: "Fustat", sans-serif;
+        color: white;
+      }
+
+      @media screen and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: calc((100% - (2 * 1rem)) / 2);
+        height: 50%;
+      }
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: calc((100% - (2 * 1rem)) / 2);
+        height: 50%;
+      }
+    }
+  }
+}
+.forth-section {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px white solid;
+  background-color: #0b37ba;
+  padding-top: 3rem;
+
+  .top-half {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .bottom-half {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    padding: 10px 30px 30px 30px;
+    justify-content: center;
+    gap: 10px;
+  }
+  h2 {
+    font-weight: 800;
+    font-size: clamp(1.5rem, 4vw, 3.4rem);
+    color: white;
+    font-family: "Fustat", sans-serif;
+  }
+
+  p {
+    font-size: clamp(5px, 1.5vw, 16px);
+    color: white;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  a {
+    font-size: clamp(15px, 2vw, 30px);
+    font-weight: 700;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    position: relative;
+
+    .dial {
+      position: absolute;
+      width: 20%;
+      height: 30px;
+      left: -22%;
+      top: 30%;
+    }
+  }
+  a:hover {
+    color: rgb(98, 135, 246);
+  }
+  .contact {
+    display: flex;
+    width: 24%;
+    height: 100%;
+    flex-direction: column;
+    gap: 25px;
+
+    h4 {
+      font-weight: 800;
+      font-size: clamp(15px, 2vw, 24px);
+      color: white;
+      font-family: "Fustat", sans-serif;
+    }
+    .link {
+      font-family: "Open Sans", sans-serif;
+      font-size: clamp(8px, 2vw, 16px);
+      font-weight: 700;
+      position: relative;
+      padding-left: 20px;
+      color: white;
+      text-transform: uppercase;
+
+      .dial {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: 0%;
+      }
+    }
+    .link:hover {
+      color: rgb(164, 185, 250);
+      text-decoration: none;
+    }
+    .social {
+      display: flex;
+      gap: 20px;
+
+      .social-son {
+        width: 30px;
+        height: 30px;
+
+        @media screen and (max-width: 767px) {
+          width: 20px;
+          height: 20px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+    a {
+      font-family: "Open Sans", sans-serif;
+      font-size: clamp(8px, 2vw, 16px);
+      font-weight: 700;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  .para {
+    font-size: clamp(8px, 2vw, 14px);
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    text-align: center;
+  }
+}
+footer {
+  width: 100%;
+  height: 3vh;
+  background-color: #333333;
+}
