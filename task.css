@@ -376,7 +376,7 @@ body {
     height: 30%;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     h2 {
       font-size: clamp(1.5rem, 4vw, 3.4rem);
       font-weight: 800;
@@ -389,7 +389,7 @@ body {
     height: 70%;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 3rem;
+    padding: 0 0 0 3rem;
 
     .boxs {
       display: flex;
